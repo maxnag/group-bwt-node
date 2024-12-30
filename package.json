@@ -27,10 +27,10 @@
   },
   "scripts": {
     "build": "rimraf ./dist && tsc --project tsconfig.build.json",
-    "dev": "ts-node --swc src/app.ts",
-    "dev:watch": "ts-node-dev  --debug --respawn --watch src src/app.ts",
-    "debug": "node --inspect-brk -r ts-node/register src/app.ts",
     "start": "node dist/app.js",
+    "dev": "ts-node --swc src/app.ts",
+    "dev:watch": "ts-node-dev --debug --respawn --watch src src/app.ts",
+    "debug": "node --inspect-brk -r ts-node/register src/app.ts",
     "test:unit": "NODE_ENV=test jest --config test/jest.unit.ts --passWithNoTests",
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
@@ -40,18 +40,17 @@
   "devDependencies": {
     "@eslint/compat": "^1.2",
     "@eslint/eslintrc": "^3.2",
-    "@eslint/js": "^9.16",
+    "@eslint/js": "^9.17",
     "@swc/core": "^1.10",
     "@swc/wasm": "^1.10",
     "@types/jest": "^29.5",
-    "@types/node": "^22.10",
     "@types/node-fetch": "^2.6",
-    "@typescript-eslint/eslint-plugin": "^8.18",
-    "@typescript-eslint/parser": "^8.18",
+    "@typescript-eslint/eslint-plugin": "^8.19",
+    "@typescript-eslint/parser": "^8.19",
     "eslint": "^9.17",
     "eslint-config-prettier": "^9.1",
     "eslint-plugin-import": "^2.31",
-    "eslint-plugin-jest": "^28.9",
+    "eslint-plugin-jest": "^28.10",
     "eslint-plugin-jsdoc": "^50.6",
     "eslint-plugin-prefer-arrow": "^1.2",
     "eslint-plugin-prettier": "^5.2",
@@ -59,15 +58,16 @@
     "jest-html-reporters": "^3.1",
     "node-notifier": "^10.0",
     "prettier": "^3.4",
-    "rimraf": "^6.0",
     "ts-jest": "^29.2",
     "ts-node": "^10.9",
     "ts-node-dev": "^2.0",
     "typescript": "^5.7"
   },
   "dependencies": {
+    "@types/node": "^22.10",
     "dayjs": "^1.11",
     "dotenv": "^16.4",
-    "node-fetch": "^3.3"
+    "node-fetch": "^3.3",
+    "rimraf": "^6.0"
   }
 }
