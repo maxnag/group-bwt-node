@@ -1,14 +1,9 @@
-import dayjs from 'dayjs';
-import isoWeek from 'dayjs/plugin/isoWeek';
-
-import { ICalculator } from './calculator/calculator.interface';
-import { ICash } from './entity/cash.interface';
-import { IOperation } from './entity/operation.interface';
-import { Mapper } from './mapper/mapper';
-import { OperationTypeEnum } from './enum/operation-type.enum';
-import { PersonTypeEnum } from './enum/person-type.enum';
-
-dayjs.extend(isoWeek);
+import { ICalculator } from '#calculator/calculator.interface';
+import { ICash } from '#entity/cash.interface';
+import { IOperation } from '#entity/operation.interface';
+import { Mapper } from '#mapper/mapper';
+import { OperationTypeEnum } from '#enum/operation-type.enum';
+import { PersonTypeEnum } from '#enum/person-type.enum';
 
 export class Manager {
   protected mapper: Mapper;

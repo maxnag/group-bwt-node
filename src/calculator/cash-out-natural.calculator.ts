@@ -1,9 +1,14 @@
-import { AbstractCalculator } from './abstract.calculator';
-import { ICalculator } from './calculator.interface';
-import { ICash } from '../entity/cash.interface';
-import { IOperation } from '../entity/operation.interface';
-import { OperationTypeEnum } from '../enum/operation-type.enum';
-import { PersonTypeEnum } from '../enum/person-type.enum';
+import dayjs from 'dayjs';
+import isoWeek from 'dayjs/plugin/isoWeek';
+
+import { AbstractCalculator } from '#calculator/abstract.calculator';
+import { ICalculator } from '#calculator/calculator.interface';
+import { ICash } from '#entity/cash.interface';
+import { IOperation } from '#entity/operation.interface';
+import { OperationTypeEnum } from '#enum/operation-type.enum';
+import { PersonTypeEnum } from '#enum/person-type.enum';
+
+dayjs.extend(isoWeek);
 
 export class CashOutNaturalCalculator extends AbstractCalculator implements ICalculator {
   protected operationCollection: IOperation[];

@@ -1,4 +1,8 @@
 {
+  "ts-node": {
+    "transpileOnly": true,
+    "require": [ "tsconfig-paths/register" ],
+  },
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
@@ -18,6 +22,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "outDir": "./dist",
+    "paths": {
+      "#*": ["./src/*"],
+      "#calculator/*": ["./src/calculator/*"],
+      "#entity/*": ["./src/entity/*"],
+      "#enum/*": ["./src/enum/*"],
+      "#interface/*": ["./src/interface/*"],
+      "#reader/*": ["./src/reader/*"],
+      "#mapper/*": ["./src/mapper/*"],
+    },
     "removeComments": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,

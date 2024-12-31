@@ -1,10 +1,10 @@
-import { ICash } from '../entity/cash.interface';
-import { IOperation } from '../entity/operation.interface';
-import { IRawCashIn } from '../interface/raw-cashIn.interface';
-import { IRawCashOutJuridical } from '../interface/raw-cash-out-juridical.interface';
-import { IRawCashOutNatural } from '../interface/raw-cash-out-natural.interface';
-import { IRawOperation } from '../interface/raw-operation.interface';
-import { Reader } from '../reader/reader';
+import { ICash } from '#entity/cash.interface';
+import { IOperation } from '#entity/operation.interface';
+import { IRawCashIn } from '#interface/raw-cashIn.interface';
+import { IRawCashOutJuridical } from '#interface/raw-cash-out-juridical.interface';
+import { IRawCashOutNatural } from '#interface/raw-cash-out-natural.interface';
+import { IRawOperation } from '#interface/raw-operation.interface';
+import { Reader } from '#reader/reader';
 
 export class Mapper {
   protected cashInEntity: { new (data: IRawCashIn): ICash };

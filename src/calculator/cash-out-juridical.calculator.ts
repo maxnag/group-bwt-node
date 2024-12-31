@@ -1,5 +1,5 @@
-import { AbstractCalculator } from './abstract.calculator';
-import { ICalculator } from './calculator.interface';
+import { AbstractCalculator } from '#calculator/abstract.calculator';
+import { ICalculator } from '#calculator/calculator.interface';
 
 export class CashOutJuridicalCalculator extends AbstractCalculator implements ICalculator {
   override calculate(): number {

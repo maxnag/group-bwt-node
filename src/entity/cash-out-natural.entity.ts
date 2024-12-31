@@ -1,6 +1,6 @@
-import { BaseCashEntity } from './base-cash.entity';
-import { ICash } from './cash.interface';
-import { IRawCashOutNatural } from '../interface/raw-cash-out-natural.interface';
+import { BaseCashEntity } from '#entity/base-cash.entity';
+import { ICash } from '#entity/cash.interface';
+import { IRawCashOutNatural } from '#interface/raw-cash-out-natural.interface';
 
 export class CashOutNaturalEntity extends BaseCashEntity implements ICash {
   constructor(data: IRawCashOutNatural) {

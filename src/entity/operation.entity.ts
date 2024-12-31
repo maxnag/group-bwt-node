@@ -1,9 +1,9 @@
 import dayjs from 'dayjs';
 
-import { IOperation } from './operation.interface';
-import { IRawOperation } from '../interface/raw-operation.interface';
-import { OperationTypeEnum } from '../enum/operation-type.enum';
-import { PersonTypeEnum } from '../enum/person-type.enum';
+import { IOperation } from '#entity/operation.interface';
+import { IRawOperation } from '#interface/raw-operation.interface';
+import { OperationTypeEnum } from '#enum/operation-type.enum';
+import { PersonTypeEnum } from '#enum/person-type.enum';
 
 export class OperationEntity implements IOperation {
   protected readonly date: dayjs.Dayjs;

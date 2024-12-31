@@ -1,10 +1,10 @@
 import path from 'path';
 import { promises as fs } from 'fs';
 
-import { IRawCashIn } from '../interface/raw-cashIn.interface';
-import { IRawCashOutJuridical } from '../interface/raw-cash-out-juridical.interface';
-import { IRawCashOutNatural } from '../interface/raw-cash-out-natural.interface';
-import { IRawOperation } from '../interface/raw-operation.interface';
+import { IRawCashIn } from '#interface/raw-cashIn.interface';
+import { IRawCashOutJuridical } from '#interface/raw-cash-out-juridical.interface';
+import { IRawCashOutNatural } from '#interface/raw-cash-out-natural.interface';
+import { IRawOperation } from '#interface/raw-operation.interface';
 
 export class Reader {
   cashInDestination: string;

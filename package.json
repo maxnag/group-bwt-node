@@ -1,6 +1,6 @@
 {
   "name": "node-test-task",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Users can go to a branch to cash in and/or cash out from account. There are also commission fees for both cash in and cash out. Only supported currency is EUR.",
   "main": "src/app.ts",
   "repository": {
@@ -27,9 +27,9 @@
   },
   "scripts": {
     "build": "rimraf ./dist && tsc --project tsconfig.build.json",
-    "start": "node dist/app.js",
+    "start": "node -r ts-node/register dist/app.js",
     "dev": "ts-node --swc src/app.ts",
-    "dev:watch": "ts-node-dev --debug --respawn --watch src src/app.ts",
+    "dev:watch": "ts-node-dev -r ts-node/register --clear --debug --respawn --watch src src/app.ts",
     "debug": "node --inspect-brk -r ts-node/register src/app.ts",
     "test:unit": "NODE_ENV=test jest --config test/jest.unit.ts --passWithNoTests",
     "lint": "eslint \"{src,test}/**/*.ts\"",
@@ -59,7 +59,6 @@
     "node-notifier": "^10.0",
     "prettier": "^3.4",
     "ts-jest": "^29.2",
-    "ts-node": "^10.9",
     "ts-node-dev": "^2.0",
     "typescript": "^5.7"
   },
@@ -68,6 +67,8 @@
     "dayjs": "^1.11",
     "dotenv": "^16.4",
     "node-fetch": "^3.3",
-    "rimraf": "^6.0"
+    "rimraf": "^6.0",
+    "ts-node": "^10.9",
+    "tsconfig-paths": "^4.2"
   }
 }

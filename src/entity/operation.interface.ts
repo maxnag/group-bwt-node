@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 
-import { OperationTypeEnum } from '../enum/operation-type.enum';
-import { PersonTypeEnum } from '../enum/person-type.enum';
+import { OperationTypeEnum } from '#enum/operation-type.enum';
+import { PersonTypeEnum } from '#enum/person-type.enum';
 
 export interface IOperation {
   getDate(): dayjs.Dayjs;

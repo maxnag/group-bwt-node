@@ -1,6 +1,6 @@
-import { BaseCashEntity } from './base-cash.entity';
-import { ICash } from './cash.interface';
-import { IRawCashIn } from '../interface/raw-cashIn.interface';
+import { BaseCashEntity } from '#entity/base-cash.entity';
+import { ICash } from '#entity/cash.interface';
+import { IRawCashIn } from '#interface/raw-cashIn.interface';
 
 export class CashInEntity extends BaseCashEntity implements ICash {
   constructor(data: IRawCashIn) {

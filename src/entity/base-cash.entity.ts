@@ -1,6 +1,6 @@
-import { IRawCashIn } from '../interface/raw-cashIn.interface';
-import { IRawCashOutJuridical } from '../interface/raw-cash-out-juridical.interface';
-import { IRawCashOutNatural } from '../interface/raw-cash-out-natural.interface';
+import { IRawCashIn } from '#interface/raw-cashIn.interface';
+import { IRawCashOutJuridical } from '#interface/raw-cash-out-juridical.interface';
+import { IRawCashOutNatural } from '#interface/raw-cash-out-natural.interface';
 
 export class BaseCashEntity {
   protected readonly feePercents: number;

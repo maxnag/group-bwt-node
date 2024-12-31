@@ -1,6 +1,6 @@
-import { ICalculator } from './calculator.interface';
-import { ICash } from '../entity/cash.interface';
-import { IOperation } from '../entity/operation.interface';
+import { ICalculator } from '#calculator/calculator.interface';
+import { ICash } from '#entity/cash.interface';
+import { IOperation } from '#entity/operation.interface';
 
 export abstract class AbstractCalculator implements ICalculator {
   protected cashEntity: ICash;
