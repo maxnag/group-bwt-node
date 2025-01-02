@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import isoWeek from 'dayjs/plugin/isoWeek';
+import isoWeek from 'dayjs/plugin/isoWeek.js';
 
 import { AbstractCalculator } from '#calculator/abstract.calculator';
 import { ICalculator } from '#calculator/calculator.interface';

@@ -26,8 +26,8 @@
     "npm": ">=10"
   },
   "scripts": {
-    "build": "rimraf ./dist && tsc --project tsconfig.build.json",
-    "start": "node -r ts-node/register dist/src/app.js",
+    "build": "rimraf ./dist && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json && ts2mjs dist && rimraf ./dist/src/**/*.js --glob && rimraf ./dist/src/*.js --glob",
+    "start": "node dist/src/app.mjs",
     "dev": "ts-node --swc src/app.ts",
     "dev:watch": "ts-node-dev -r ts-node/register --clear --debug --respawn --watch src src/app.ts",
     "debug": "node --inspect-brk -r ts-node/register src/app.ts",
@@ -69,6 +69,8 @@
     "node-fetch": "^3.3",
     "rimraf": "^6.0",
     "ts-node": "^10.9",
+    "ts2mjs": "^3.0.0",
+    "tsc-alias": "^1.8",
     "tsconfig-paths": "^4.2"
   }
 }

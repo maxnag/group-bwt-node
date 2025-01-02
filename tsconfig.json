@@ -6,11 +6,10 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
-    "declaration": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": false,
+    "forceConsistentCasingInFileNames": true,
     "incremental": true,
     "module": "CommonJS",
     "noFallthroughCasesInSwitch": false,
@@ -20,7 +19,6 @@
     "noUncheckedIndexedAccess": false,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
-    "outDir": "./dist",
     "paths": {
       "#*": ["./src/*"],
       "#calculator/*": ["./src/calculator/*"],
@@ -34,7 +32,6 @@
     "resolveJsonModule": true,
     "rootDir": ".",
     "skipLibCheck": true,
-    "sourceMap": true,
     "strict": true,
     "strictBindCallApply": false,
     "strictFunctionTypes": true,
